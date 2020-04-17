@@ -1,0 +1,10 @@
+close(fd[0]);
+
+read(fd[0],str,strlen(str));
+
+  printf("\n\npid is %d for reading in pipe ",getpid());
+
+  printf("\n\nreading from the file  :%s\n",str);
+
+
+} 
