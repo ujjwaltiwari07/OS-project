@@ -1,0 +1,30 @@
+int fd[2];
+write(fd[1],str,strlen(str));
+ printf("pid is %d for wiring in pipe - ",getpid());
+
+ int y=strlen(str);
+
+ printf("\n\n we have Written in pipe :%s\n",str);
+ 	
+for(i=0;i<strlen(str);i++)
+
+	 {
+
+	   if((int)str[i]>=65 && (int)str[i]<=90)
+
+	     {
+
+		str[i]=(int)str[i]+32;
+
+	     }
+
+	   else if((int)str[i]>=97 && (int)str[i]<=122)
+
+	     {
+
+		  str[i]=(int)str[i]-32;
+
+	     }
+
+	 }
+
